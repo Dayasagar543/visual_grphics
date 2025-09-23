@@ -1,6 +1,7 @@
 import vpython as vp #this is most commonly used in any dev environment .
 import time as tm
 import math as mt
+
 # from vpython  import *
 # import vpython
 # you can also import in 3 ways in python
@@ -16,7 +17,11 @@ import math as mt
 # tm.sleep(4)
 floor=vp.box(color=vp.color.white,length=20,width=20,height=.5,pos=vp.vector(0,-10,0))
 ceiling=vp.box(color=vp.color.white,length=20,width=20,height=.5,pos=vp.vector(0,10,0))
-cylinder1=vp.cylinder(color=vp.color.green,radius=2,length=10,pos=vp.vector(0,-5,0),axis=vp.vector(0,1,0))
+rightwall=vp.box(color=vp.color.white,length=.5,width=20,height=20,pos=vp.vector(10,0,0))
+leftwall=vp.box(color=vp.color.white,length=.5,width=20,height=20,pos=vp.vector(-10,0,0))
+backwall=vp.box(color=vp.color.white,length=20,width=.5,height=20,pos=vp.vector(0,0,-10))
+# cylinder1=vp.cylinder(color=vp.color.green,radius=2,length=10,pos=vp.vector(0,-5,0),axis=vp.vector(0,1,0))
+sphere=vp.sphere(color=vp.color.red,radius=1,pos=vp.vector(0,0,0),make_trail=True)
 while True:
     # ball.color=vp.color.green
     # tm.sleep(1)
