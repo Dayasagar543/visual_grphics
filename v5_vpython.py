@@ -25,6 +25,8 @@ xpos=0
 ypos=0
 zpos=0
 
+
+#change in the directions
 x_move=0.1
 y_move=0.1
 z_move=0.1
@@ -42,15 +44,19 @@ while True:
     left_marble_edge=xpos-radius_ball
     right_wall_edge=x_direction/2-wall_thickness/2
     left_wall_edge=-x_direction/2+wall_thickness/2
+    
+    
     #borders for y direction
     top_marble_edge=ypos+radius_ball
     bottom_marble_edge=ypos-radius_ball
     top_wall_edge=y_direction/2-wall_thickness/2
-    bottom_wall_edge=y_direction/2+wall_thickness/2
+    bottom_wall_edge=-y_direction/2+wall_thickness/2
+    
+    
     #borders for z direction
     back_marble_edge=zpos+radius_ball
     front_marble_edge=zpos-radius_ball
-    back_wall_edge=z_direction/2+wall_thickness/2
+    back_wall_edge=-z_direction/2+wall_thickness/2
     front_wall_edge=z_direction/2-wall_thickness/2
     
     # x_direction
