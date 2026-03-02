@@ -24,5 +24,10 @@ while True:
     for angle in np.linspace(0,2*np.pi,1000):
         rate(50)
         moving_arrow.axis=vector(arrow_length*np.sin(angle),arrow_length*np.cos(angle),z_home)
-   
+    for angle in np.linspace(0,2*np.pi,1000):
+        rate(50)
+        moving_arrow.axis=vector(x_home,arrow_length*np.sin(angle),arrow_length*np.cos(angle))
+    for angle in np.linspace(0,2*np.pi,1000):
+        rate(50)
+        moving_arrow.axis=vector(arrow_length*np.sin(angle),y_home,arrow_length*np.cos(angle))
     pass
